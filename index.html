@@ -49,6 +49,20 @@
         .indigo { background-color: indigo; }
         .violet { background-color: violet; }
 		.pink { background-color: pink; }
+		
+        .container {
+            display: flex; /* Enable Flexbox */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            width: 100%;
+            height: 40vh; /* Full viewport height */
+            background-color: #f0f0f0; /* Background for visibility */
+        }
+
+        img {
+            max-width: 100%; /* Scale image to fit */
+            max-height: 100%; /* Scale image to fit */
+        }
 
 		
 		
@@ -92,7 +106,9 @@
 	
 	<h2>Logistics?</h2>
 		Please park in the parking lot shown below and join us through the party entrance. Access this parking lot via Elliot Ave.
-		<p><img src="map.png" /></p>
+		<div class="container">
+			<img src="map.png" alt="Map to Party" class="responsive-image">
+		</div>
     
     <!-- Rainbow bars -->
     <div class="rainbow-bar red"></div>
